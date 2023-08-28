@@ -2,7 +2,6 @@ package pansong291.xposed.quickenergy.ui;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.ComponentName;
 import android.content.ContentResolver;
 import android.content.Context;
@@ -17,14 +16,15 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.ArrayList;
+
 import pansong291.xposed.quickenergy.R;
 import pansong291.xposed.quickenergy.entity.FriendWatch;
 import pansong291.xposed.quickenergy.util.Config;
 import pansong291.xposed.quickenergy.util.FileUtils;
 import pansong291.xposed.quickenergy.util.PermissionUtil;
 import pansong291.xposed.quickenergy.util.Statistics;
-
-import java.util.ArrayList;
 
 public class MainActivity extends Activity {
     TextView tvStatistics;
@@ -93,11 +93,11 @@ public class MainActivity extends Activity {
 
         setModuleActive(isExpModuleActive(this));
         PermissionUtil.requestPermissions(this);
-        new AlertDialog.Builder(this)
-                .setTitle("提示")
-                .setMessage("本APP是为了学习研究开发，免费提供，不得进行任何形式的转发、发布、传播。请于24小时内卸载本APP。如果您是购买的可能已经被骗，请联系卖家退款。")
-                .setNegativeButton("我知道了", null)
-                .create().show();
+//        new AlertDialog.Builder(this)
+//                .setTitle("提示")
+//                .setMessage("本APP是为了学习研究开发，免费提供，不得进行任何形式的转发、发布、传播。请于24小时内卸载本APP。如果您是购买的可能已经被骗，请联系卖家退款。")
+//                .setNegativeButton("我知道了", null)
+//                .create().show();
     }
 
     @Override

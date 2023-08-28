@@ -1,21 +1,24 @@
 
 buildscript {
     repositories {
+        google()
+        mavenCentral()
         maven { url 'https://maven.aliyun.com/repository/public/' }
         maven { url 'https://maven.aliyun.com/repository/google/'}
         maven { url 'https://maven.aliyun.com/repository/jcenter/'}
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.0.0'
+        classpath 'com.android.tools.build:gradle:8.1.1'
     }
 }
 
 allprojects {
     repositories {
+        google()
+        mavenCentral()
         maven { url 'https://maven.aliyun.com/repository/public/' }
         maven { url 'https://maven.aliyun.com/repository/google/'}
         maven { url 'https://maven.aliyun.com/repository/jcenter/'}
-        mavenCentral()
     }
 }
 
