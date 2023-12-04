@@ -2,6 +2,7 @@ package pansong291.xposed.quickenergy.ui;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.ComponentName;
 import android.content.ContentResolver;
 import android.content.Context;
@@ -16,9 +17,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import java.util.ArrayList;
-
 import pansong291.xposed.quickenergy.R;
 import pansong291.xposed.quickenergy.data.RuntimeInfo;
 import pansong291.xposed.quickenergy.entity.FriendWatch;
@@ -26,6 +24,8 @@ import pansong291.xposed.quickenergy.util.Config;
 import pansong291.xposed.quickenergy.util.FileUtils;
 import pansong291.xposed.quickenergy.util.PermissionUtil;
 import pansong291.xposed.quickenergy.util.Statistics;
+
+import java.util.ArrayList;
 
 public class MainActivity extends Activity {
     TextView tvStatistics;
